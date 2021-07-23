@@ -25,8 +25,8 @@ module.exports.run = async (bot, message, args) => {
 
         const embed = new Discord.MessageEmbed()
         .setTitle(`Você foi banido permanentemente do YceMC`)
-        .addField("🔍 Staff:", `${message.author.username}`)
-        .addField("📜 Motivo:", `${bReason}`)
+        .addField("Staff:", `${message.author.username}`)
+        .addField("Motivo:", `${bReason}`)
         .setColor("#bc0000")
         .setFooter(message.author.displayAvatarURL({ dynamic: true }))
   .setTimestamp();

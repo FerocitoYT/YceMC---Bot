@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
     const help = new Discord.MessageEmbed()
     .setTitle('Comandos disponíveis:')
-    .setDescription('**!!help\n!!evento\n!!ip\n!!avatar\n!!bug\n!!loja\n!!say\n!!status**')
+    .setDescription('**!!help\n!!evento\n!!ip\n!!avatar\n!!bug\n!!loja\n!!say\n!!status\n!!ticket**')
     .setColor('#1842c5')
     .setFooter(`${message.author.tag}`, message.author.displayAvatarURL({ dynamic: true }))
     .setTimestamp()

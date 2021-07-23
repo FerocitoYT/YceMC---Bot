@@ -25,8 +25,8 @@ module.exports.run = async (bot, message, args) => {
 
         const embed = new Discord.MessageEmbed()
  .setTitle(`Você foi expulso do YceMC`)
-        .addField("🔍 Staff:", `${message.author.username}`)
-        .addField("📜 Motivo:", `${reason}`)
+        .addField("Staff:", `${message.author.username}`)
+        .addField("Motivo:", `${reason}`)
         .setColor("#bc0000")
         .setFooter(message.author.displayAvatarURL({ dynamic: true }))
   .setTimestamp();
