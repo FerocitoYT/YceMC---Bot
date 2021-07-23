@@ -16,9 +16,18 @@ client.login(process.env.TOKEN);
 
 client.on("message", function(message) {
   
-  client.user.setActivity(`YceMC`, {type: "PLAYING"});
+  client.user.setActivity(`Use !!help para ver os principais comandos`, {type: "PLAYING"});
            
 });
+
+client.on("message", message => {
+    if (message.author.bot) return;
+    if (message.channel.type == 'mensagem')
+    return
+    if(message.content == `<@${client.user.id}>` || message.content == `<@!${client.user.id}>`) {
+    return message.channel.send(`${message.author} Use **!!help** para ver os comandos disponíveis!!`)
+    }
+    });
 
 client.on('message', message => {
      if (message.author.bot) return;
